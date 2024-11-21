@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import scipy.stats as st # 가우시안 커널을 위한 라이브러리
 import scipy.misc
 import os
@@ -87,9 +87,9 @@ def textureSynthesis(exampleMapPath, outputSize, searchKernelSize, savePath, att
         filledMap[candidate_row, candidate_col] = 1
 
         # 실시간 업데이트 표시
-        plt.pyplot.imshow(canvas)
+        plt.imshow(canvas)
         clear_output(wait=True)
-        display(plt.pyplot.show())
+        display(plt.show())
 
         resolved_pixels = resolved_pixels + 1
         
